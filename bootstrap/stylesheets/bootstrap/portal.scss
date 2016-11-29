@@ -1,10 +1,9 @@
 // COMPILE SASS FILE
 // CD into /bootstrap/stylesheets/bootstrap
-// sass --watch bootstrap.scss:../../../css/bootstrap.css portal.scss:../../../css/portal.css
-
+// ss --watch bootstrap.scss:../../../css/bootstrap.css portal.scss:../../../css/portal.css
 
 // Variables colors
-@import "portal-homepage-colors";
+@import "portal-homepage-colors.scss";
 
 // Rest styles
 @import "portal-homepage";

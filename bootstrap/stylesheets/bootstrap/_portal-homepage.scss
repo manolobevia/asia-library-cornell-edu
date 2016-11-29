@@ -156,6 +156,13 @@ a.show-hide-search {
             padding-right: 10px;
             //cursor: pointer;
             padding-bottom: 10px;
+            a {
+                color: $link-text;
+                span {
+                        font-size: 12px;
+                        padding-left: 4px;
+                    }
+            }
             a:hover {} .wrapper {
                 padding: 0;
                 position: relative;
@@ -271,6 +278,10 @@ a.show-hide-search {
                     color: #fff;
                     &.active {
                         color: $link-text;
+                    }
+                    span {
+                        font-size: 12px;
+                        padding-left: 4px;
                     }
                 }
                 .wrapper {
@@ -758,6 +769,11 @@ a.show-hide-search {
             &.wason {
                 a {
                     font-size: 18px;
+                    span {
+                        font-size: 12px;
+                        padding-left: 4px;
+                        padding-right: 10px;
+                    }
                 }
             }
             a {
@@ -1172,6 +1188,9 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
     }
     .search-home {
         padding-left: 40px;
+    }
+    .home h3 {
+        //left: 40px;
     }
 }
 
