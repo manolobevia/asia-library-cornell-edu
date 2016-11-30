@@ -272,6 +272,15 @@ a.show-hide-search {
 /*******************************************
     MOBILE NAV 
  *******************************************/
+.asia-collection .home .CUL-branding svg,
+.asia-collection .interior .CUL-branding svg {
+  display: none;
+  width: auto;
+  height: 100px; }
+
+.asia-collection .search-home {
+  top: 200px; }
+
 .home .CUL-branding-mobile,
 .interior .CUL-branding-mobile {
   width: 100%;
@@ -831,6 +840,9 @@ a.show-hide-search {
     font-size: 1.2em;
     color: green; }
 
+.asia-collection .ac {
+  margin-top: 50px; }
+
 /* Extra small devices (phones, up to 480px) */
 /* No media query since this is the default in Bootstrap */
 /*
@@ -842,16 +854,25 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
 
 */
 @media (min-width: 480px) {
+  body {
+    border: 2px solid yellow; }
+
   .front .home {
     height: 330px; }
 
   .search-home {
     position: absolute;
-    top: 120px; } }
+    top: 120px; }
+
+  .asia-collection .search-home {
+    top: 160px; } }
 @media (min-width: 533px) {
   .corner-hero {
     display: block; } }
 @media (min-width: 640px) {
+  body {
+    border: 2px solid blue; }
+
   .help {
     display: block; }
 
@@ -928,7 +949,10 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
     padding-left: 30px; }
 
   .search-home {
-    padding-left: 40px; } }
+    padding-left: 40px; }
+
+  .asia-collection .search-home {
+    top: 240px; } }
 /*
  _____      _     _      _       
 /__   \__ _| |__ | | ___| |_ ___ 
@@ -939,6 +963,9 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
 */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  body {
+    border: 2px solid green; }
+
   .collections .collection {
     border-bottom: none; }
 
@@ -977,7 +1004,16 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
     .news .new:last-child {
       border-bottom: 1px solid #e5e5e6; }
     .news .new:first-child {
-      padding-top: 0; } }
+      padding-top: 0; }
+
+  #nav.collection {
+    padding-left: 97px; }
+
+  .asia-collection .search-home {
+    padding-left: 110px; }
+
+  .asia-collection .search-home {
+    top: 200px; } }
 /*  
     ___          _    _              
    /   \___  ___| | _| |_ ___  _ __  
