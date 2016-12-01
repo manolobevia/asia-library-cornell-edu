@@ -1,8 +1,5 @@
 //COMPILE SASS FILE ASIA LIBRARY THEME
-//sass --watch bootstrap.scss:../../../css/bootstrap.css portal.scss:../../../css/portal.css homepage-japan.scss:../../../css/homepage-japan.css  homepage-korea.scss:../../../css/homepage-korea.css homepage-china.scss:../../../css/homepage-china.css
-
-
-
+//sass --watch bootstrap.scss:../../../css/bootstrap.css portal.scss:../../../css/portal.css homepage-japan.scss:../../../css/homepage-japan.css  homepage-korea.scss:../../../css/homepage-korea.css homepage-china.scss:../../../css/homepage-china.css homepage-south.scss:../../../css/homepage-south.css homepage-southeast.scss:../../../css/homepage-southeast.css
 
 /*******************************************
     RESETS
@@ -695,17 +692,19 @@ a.show-hide-search {
         }
     }
 }
+
 //HEADER BG
 .front .home {
     //height: 450px;
     height: 370px;
     background-position: left top;
     background-repeat: no-repeat;
-    //background-image: url("../images/bg-interior-motif.png");
-    //background-size:  cover;
+    //background-image: url("../images/homepage-bg-hero.png");
+    background-size:  cover;
     background-color: $blue;
     position: relative;
 }
+
 // ORGANIZE
 //HEADER BG
 .not-front .interior {
@@ -720,6 +719,7 @@ a.show-hide-search {
     background-image: url("../images/bg-interior-motif.png"), url("../images/bg-interior.png");
     background-size: cover, cover;
 }
+
 // ORGANIZE
 // BG for header in interior pages
 .not-front {
@@ -1097,7 +1097,7 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
 
 @media (min-width: 480px) {
     body {
-        border: 2px solid yellow;
+        //border: 2px solid yellow;
     }
     .front .home {
         height: 330px;
@@ -1120,7 +1120,7 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
 }
 @media (min-width: 640px) {
     body {
-        border: 2px solid blue;
+        //border: 2px solid blue;
     }
     .help {
         display: block;
@@ -1248,7 +1248,7 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
 
 @media (min-width: 768px) {
     body {
-        border: 2px solid green;
+        //border: 2px solid green;
     }
     .collections {
         .collection {
