@@ -281,44 +281,47 @@ a.show-hide-search {
 .asia-collection .search-home {
   top: 200px; }
 
-.home .CUL-branding-mobile,
-.interior .CUL-branding-mobile {
-  width: 100%;
-  height: 45px;
-  background-color: #b31b1b; }
-  .home .CUL-branding-mobile img,
-  .interior .CUL-branding-mobile img {
-    padding-left: 3px;
-    padding-top: 3px; }
-.home .CUL-branding svg,
-.interior .CUL-branding svg {
-  display: none;
-  width: 612px;
-  height: auto;
-  padding-top: 18px;
-  padding-left: 5px; }
-.home h1,
-.interior h1 {
-  font-size: 18px;
-  color: #fff;
-  margin: 0;
-  padding-top: 20px;
-  padding-left: 10px;
-  opacity: .7; }
-  .home h1 a,
-  .interior h1 a {
-    color: #fff; }
-.home h2,
-.interior h2 {
-  font-size: 30px;
-  color: #fff;
-  margin: 0;
-  padding-top: 5px;
-  padding-left: 10px;
-  margin-right: 40px; }
-  .home h2 a,
-  .interior h2 a {
-    color: #fff; }
+.home,
+.interior {
+  position: relative; }
+  .home .CUL-branding-mobile,
+  .interior .CUL-branding-mobile {
+    width: 100%;
+    height: 45px;
+    background-color: #b31b1b; }
+    .home .CUL-branding-mobile img,
+    .interior .CUL-branding-mobile img {
+      padding-left: 3px;
+      padding-top: 3px; }
+  .home .CUL-branding svg,
+  .interior .CUL-branding svg {
+    display: none;
+    width: 612px;
+    height: auto;
+    padding-top: 18px;
+    padding-left: 5px; }
+  .home h1,
+  .interior h1 {
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 10px;
+    opacity: .7; }
+    .home h1 a,
+    .interior h1 a {
+      color: #fff; }
+  .home h2,
+  .interior h2 {
+    font-size: 30px;
+    color: #fff;
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-right: 40px; }
+    .home h2 a,
+    .interior h2 a {
+      color: #fff; }
 
 /*******************************************
     SEARCH PORTAL AND COLLECTIONS HOMEPAGES
@@ -566,8 +569,8 @@ a.show-hide-search {
   height: 180px;
   background-position: left top, left top;
   background-repeat: no-repeat, no-repeat;
-  background-image: url("../images/bg-interior-motif.png"), url("../images/bg-interior.png");
-  background-size: cover, cover; }
+  background-image: url("../images/homepage-bg-hero.png");
+  background-size: cover; }
 
 .not-front {
   background-position: right 400px;
@@ -576,6 +579,19 @@ a.show-hide-search {
   background-size: 40%; }
 
 .corner-hero {
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  display: block;
+  height: 175px;
+  width: auto;
+  color: #fff;
+  display: none; }
+
+.corner-hero-interior {
   position: absolute;
   bottom: -1px;
   right: 0;
@@ -865,7 +881,8 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
   .asia-collection .search-home {
     top: 160px; } }
 @media (min-width: 533px) {
-  .corner-hero {
+  .corner-hero,
+  .corner-hero-interior {
     display: block; } }
 @media (min-width: 640px) {
   .help {
