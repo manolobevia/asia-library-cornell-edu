@@ -694,43 +694,15 @@ a.show-hide-search {
     }
 }
 
-//HEADER BG
 .front .home {
     //height: 450px;
     height: 370px;
     background-position: left top;
     background-repeat: no-repeat;
-    //background-image: url("../images/homepage-bg-hero.png");
     background-size:  cover;
-    background-color: $blue;
     position: relative;
 }
 
-// ORGANIZE
-//HEADER BG
-.not-front .interior {
-    height: 180px;
-    //background, background-attachment, 
-    //background-clip, background-image, background-origin, 
-    //background-position, background-repeat, background-size.
-    // Added multiple bg for interior header
-    background-position: left top, left top;
-    background-repeat: no-repeat, no-repeat;
-    // Image from top to bottom
-    background-image: url("../images/homepage-bg-hero.png");
-    background-size: cover;
-}
-
-// ORGANIZE
-// BG for header in interior pages
-.not-front {
-    //background-color: red;
-    background-position: right 400px;
-    background-repeat: no-repeat;
-    // Image from top to bottom
-    background-image: url("../images/motif-1.svg");
-    background-size: 40%;
-}
 .corner-hero {
     position: absolute;
     bottom: -1px;
@@ -744,6 +716,16 @@ a.show-hide-search {
     color: #fff;
     display: none;
 }
+
+.not-front .interior {
+    background-position: left -200px;
+    background-repeat: no-repeat;
+    //background-size: cover;
+    position: relative;
+    height: auto;
+    padding-bottom: 20px;
+}
+
 .corner-hero-interior {
     position: absolute;
     bottom: -1px;
@@ -757,6 +739,7 @@ a.show-hide-search {
     color: #fff;
     display: none;
 }
+
 .home h3 {
     position: absolute;
     bottom: 0;
@@ -1010,6 +993,17 @@ a.show-hide-search {
 /*******************************************
     INTERIOR PAGES
  *******************************************/
+
+.sub-section {
+    background-color: #cfb067;
+    padding: 10px 10px 10px 15px;
+    h3 {
+
+        color: #fff;
+        margin-bottom: 0;
+        
+    }
+}
 
 .page-content {
     .content-item {
