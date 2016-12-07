@@ -7,7 +7,7 @@
 
 body {
     margin: 0;
-    color: $gray;
+    color: $body-text;
     overflow-x: hidden;
 }
 /*.show-grid {
@@ -26,10 +26,7 @@ li {
     //list-style-type: none; 
     font-size: 20px;
 }
-.row {
-    //margin-left: -15px;
-    //margin-right: -15px;
-}
+
 @font-face {
     font-family: "Glyphicons Halflings";
     src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
@@ -240,10 +237,9 @@ a.show-hide-search {
     #nav {
         display: block !important;
         position: relative;
-        //margin-left: 150px;
         margin-left: 0;
         background-color: transparent;
-        top: 60px;
+        top: 0;
         ul.first-level {
             list-style: transparent;
             padding: 10px 15px;
@@ -686,6 +682,7 @@ a.show-hide-search {
     text-align: center;
     padding-top: 5px;
     font-size: 28px;
+    z-index: 100;
     a {
         color: #fff;
         &:hover {
@@ -694,6 +691,9 @@ a.show-hide-search {
     }
 }
 
+/*******************************************
+    HEADER GRAPHICS PAGES
+ *******************************************/
 .front .home {
     //height: 450px;
     height: 370px;
@@ -734,7 +734,7 @@ a.show-hide-search {
     text-align: center;
     padding-top: 5px;
     display: block;
-    height: 175px;
+    height: 100px;
     width: auto;
     color: #fff;
     display: none;
@@ -803,6 +803,13 @@ a.show-hide-search {
         }
     }
     .collection:last-child {}
+}
+#nav.collection {
+    .glyphicon-search {
+        font-size: 22px;
+        margin-top: -5px;
+        display: inline-block;
+    }
 }
 /*******************************************
     FEATURES PORTAL PAGE
@@ -995,18 +1002,24 @@ a.show-hide-search {
  *******************************************/
 
 .sub-section {
-    background-color: #cfb067;
-    padding: 10px 10px 10px 15px;
-    h3 {
+    background-color: $gold;
 
+    h3 {
+        width: 1300px;
+        margin: 0 auto;
+        padding-left: 30px;
+        padding-top: 25px;
+        padding-bottom: 25px;
         color: #fff;
         margin-bottom: 0;
+        font-size: 32px;
         
     }
 }
 
 .page-content {
     .content-item {
+        color: $body-text;
         padding-right: 50px;
         padding-bottom: 40px;
         padding-left: 30px;
@@ -1016,52 +1029,64 @@ a.show-hide-search {
         // Image from top to bottom
         background-image: url("../images/motif-2.svg");
         background-size: 60%;
-        .breadcrumbs {
+        /*.breadcrumbs {
             font-size: 16px;
             padding-top: 20px;
             ul {
                 padding-left: 0;
                 li {
                     display: inline-block;
+                    a {
+                        color: $btn-link-text-inteior
+                    }
                     a:hover {
                         color: $body-text;
                     }
                 }
             }
-        }
-        h3 {
-            font-size: 32px;
-            margin-top: 30px;
-            margin-bottom: 20px;
-            color: $header-text;
-            font-family: "Bree Serif";
-        }
+        }*/
         h4 {
-            font-size: 30px;
+            font-size: 28px;
             margin-top: 24px;
             margin-bottom: 25px;
             color: $header-text;
         }
         h5 {
-            font-size: 28px;
+            font-size: 26px;
             margin-top: 24px;
             margin-bottom: 25px;
             color: $header-text;
-            font-family: "Bree Serif";
+        }
+        h6 {
+            font-size: 20px;
+            margin-top: 24px;
+            margin-bottom: 25px;
+            color: $header-text;
         }
         p {
             font-size: 1.2em;
         }
-        p.year {
-            color: $body-text;
-        }
-        ul {
+        ul,ol {
             margin-top: 0;
             li {
                 margin-bottom: 3px;
                 ul li:last-child {
                     margin-bottom: 20px;
                 }
+            }
+        }
+        dt {
+            font-size: 20px;
+        }
+        dd {
+            font-size: 1em;
+            padding-left: 20px;
+        }
+        a {
+            color: $btn-link-text-interior;
+            
+            &:hover {
+                color: $btn-link-text-interior;
             }
         }
     }
@@ -1072,16 +1097,16 @@ a.show-hide-search {
         border-top: 1px solid #d2dcdd;
         h3 {
             font-size: 22px;
-            color: $gray;
-            font-family: "Bree Serif";
-            i {
-                color: #000;
-                padding-left: 7px;
-            }
+            color: $header-text;
         }
         a {
-            font-size: 1.2em;
-            color: green;
+            font-size: 18px;
+            color: $btn-link-text-interior;
+
+            &:hover {
+            color: $btn-link-text-interior;
+
+            }
         }
     }
 }
@@ -1105,7 +1130,7 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
 
 @media (min-width: 480px) {
     body {
-        //border: 2px solid yellow;
+        border: 2px solid yellow;
     }
     .front .home {
         height: 330px;
@@ -1129,7 +1154,7 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
 }
 @media (min-width: 640px) {
     body {
-        //border: 2px solid blue;
+        border: 2px solid blue;
     }
     .help {
         display: block;
@@ -1158,7 +1183,7 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
         height: 540px;
     }
     .not-front .interior {
-        height: 272px;
+        height: 180px;
     }
     /// SEARCH HOME
     .search-home {
@@ -1257,7 +1282,7 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
 
 @media (min-width: 768px) {
     body {
-        //border: 2px solid green;
+        border: 2px solid green;
     }
     .collections {
         .collection {
@@ -1313,8 +1338,6 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
         padding-left: 97px;
     }
 
-    //180
-
     .asia-collection {
 
         .search-home {
@@ -1343,7 +1366,7 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
 
 @media (min-width: 992px) {
     body {
-        //border: 2px solid pink;
+        border: 2px solid pink;
     }
     .collection,
     .feature {
@@ -1440,7 +1463,7 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
 
 @media (min-width: 1440px) {
     body {
-        //border: 3px solid red;
+        border: 3px solid red;
     }
     .features,
     .news {

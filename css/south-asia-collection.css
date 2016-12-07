@@ -1,12 +1,12 @@
 /*******************************************
-    VARIABLES COLOR FOR PORTAL PAGE
+    VARIABLES COLOR FOR SOUTH ASIA PAGES
  *******************************************/
 /*******************************************
     RESETS
  *******************************************/
 body {
   margin: 0;
-  color: #2c3e50;
+  color: #535562;
   overflow-x: hidden; }
 
 /*.show-grid {
@@ -199,7 +199,7 @@ a.show-hide-search {
     position: relative;
     margin-left: 0;
     background-color: transparent;
-    top: 60px; }
+    top: 0; }
     #nav ul.first-level {
       list-style: transparent;
       padding: 10px 15px;
@@ -551,12 +551,16 @@ a.show-hide-search {
   color: #fff;
   text-align: center;
   padding-top: 5px;
-  font-size: 28px; }
+  font-size: 28px;
+  z-index: 100; }
   .user-tools-header a {
     color: #fff; }
     .user-tools-header a:hover {
       opacity: .5; }
 
+/*******************************************
+    HEADER GRAPHICS PAGES
+ *******************************************/
 .front .home {
   height: 370px;
   background-position: left top;
@@ -592,7 +596,7 @@ a.show-hide-search {
   text-align: center;
   padding-top: 5px;
   display: block;
-  height: 175px;
+  height: 100px;
   width: auto;
   color: #fff;
   display: none; }
@@ -644,6 +648,11 @@ a.show-hide-search {
           padding-right: 10px; }
       .collections .collection p a {
         font-size: 16px; }
+
+#nav.collection .glyphicon-search {
+  font-size: 22px;
+  margin-top: -5px;
+  display: inline-block; }
 
 /*******************************************
     FEATURES PORTAL PAGE
@@ -791,56 +800,74 @@ a.show-hide-search {
     INTERIOR PAGES
  *******************************************/
 .sub-section {
-  background-color: #cfb067;
-  padding: 10px 10px 10px 15px; }
+  background-color: #cfb067; }
   .sub-section h3 {
+    width: 1300px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     color: #fff;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 32px; }
 
 .page-content .content-item {
+  color: #535562;
   padding-right: 50px;
   padding-bottom: 40px;
   padding-left: 30px;
   background-position: 0 bottom;
   background-repeat: no-repeat;
   background-image: url("../images/motif-2.svg");
-  background-size: 60%; }
-  .page-content .content-item .breadcrumbs {
-    font-size: 16px;
-    padding-top: 20px; }
-    .page-content .content-item .breadcrumbs ul {
-      padding-left: 0; }
-      .page-content .content-item .breadcrumbs ul li {
-        display: inline-block; }
-        .page-content .content-item .breadcrumbs ul li a:hover {
-          color: #535562; }
-  .page-content .content-item h3 {
-    font-size: 32px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    color: #cfb067;
-    font-family: "Bree Serif"; }
+  background-size: 60%;
+  /*.breadcrumbs {
+      font-size: 16px;
+      padding-top: 20px;
+      ul {
+          padding-left: 0;
+          li {
+              display: inline-block;
+              a {
+                  color: $btn-link-text-inteior
+              }
+              a:hover {
+                  color: $body-text;
+              }
+          }
+      }
+  }*/ }
   .page-content .content-item h4 {
-    font-size: 30px;
+    font-size: 28px;
     margin-top: 24px;
     margin-bottom: 25px;
     color: #cfb067; }
   .page-content .content-item h5 {
-    font-size: 28px;
+    font-size: 26px;
     margin-top: 24px;
     margin-bottom: 25px;
-    color: #cfb067;
-    font-family: "Bree Serif"; }
+    color: #cfb067; }
+  .page-content .content-item h6 {
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 25px;
+    color: #cfb067; }
   .page-content .content-item p {
     font-size: 1.2em; }
-  .page-content .content-item p.year {
-    color: #535562; }
-  .page-content .content-item ul {
+  .page-content .content-item ul, .page-content .content-item ol {
     margin-top: 0; }
-    .page-content .content-item ul li {
+    .page-content .content-item ul li, .page-content .content-item ol li {
       margin-bottom: 3px; }
-      .page-content .content-item ul li ul li:last-child {
+      .page-content .content-item ul li ul li:last-child, .page-content .content-item ol li ul li:last-child {
         margin-bottom: 20px; }
+  .page-content .content-item dt {
+    font-size: 20px; }
+  .page-content .content-item dd {
+    font-size: 1em;
+    padding-left: 20px; }
+  .page-content .content-item a {
+    color: #cfb067; }
+    .page-content .content-item a:hover {
+      color: #cfb067; }
 .page-content .side-nav {
   padding-top: 10px;
   padding-left: 30px;
@@ -848,14 +875,12 @@ a.show-hide-search {
   border-top: 1px solid #d2dcdd; }
   .page-content .side-nav h3 {
     font-size: 22px;
-    color: #2c3e50;
-    font-family: "Bree Serif"; }
-    .page-content .side-nav h3 i {
-      color: #000;
-      padding-left: 7px; }
+    color: #cfb067; }
   .page-content .side-nav a {
-    font-size: 1.2em;
-    color: green; }
+    font-size: 18px;
+    color: #cfb067; }
+    .page-content .side-nav a:hover {
+      color: #cfb067; }
 
 .asia-collection .ac {
   margin-top: 50px; }
@@ -871,6 +896,9 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
 
 */
 @media (min-width: 480px) {
+  body {
+    border: 2px solid yellow; }
+
   .front .home {
     height: 330px; }
 
@@ -885,6 +913,9 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
   .corner-hero-interior {
     display: block; } }
 @media (min-width: 640px) {
+  body {
+    border: 2px solid blue; }
+
   .help {
     display: block; }
 
@@ -909,7 +940,7 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
     height: 540px; }
 
   .not-front .interior {
-    height: 272px; }
+    height: 180px; }
 
   .search-home {
     position: absolute;
@@ -975,6 +1006,9 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
 */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  body {
+    border: 2px solid green; }
+
   .collections .collection {
     border-bottom: none; }
 
@@ -1033,6 +1067,9 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
  */
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  body {
+    border: 2px solid pink; }
+
   .collection .img-responsive,
   .feature .img-responsive {
     width: auto; }
@@ -1103,6 +1140,9 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
 */
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1440px) {
+  body {
+    border: 3px solid red; }
+
   .features,
   .news {
     width: 1300px;
@@ -1138,4 +1178,4 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
     left: initial;
     right: 20px; } }
 
-/*# sourceMappingURL=homepage-southeast.css.map */
+/*# sourceMappingURL=south-asia-collection.css.map */
