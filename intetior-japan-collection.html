@@ -34,7 +34,7 @@ $theme_path = drupal_get_path('theme',$GLOBALS['theme']) . '/';
     <link rel="stylesheet" href="css/bootstrap.css">
 
     <!-- Asia Theme -->
-    <link rel="stylesheet" href="css/south-asia-collection.css">
+    <link rel="stylesheet" href="css/japan-collection.css">
 
     <!-- Pictofonts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -92,23 +92,24 @@ $theme_path = drupal_get_path('theme',$GLOBALS['theme']) . '/';
   <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 </a>
 
-<header class="interior"  style="background-image: url('images/homepage-bg-hero.png');">
+ <header class="interior" style="background-image: url('images/interior-header-images/interior-wason-japan-1.jpg');"> 
 
     <section class="CUL-branding">
 
-       <!--<?php echo file_get_contents($theme_path . "images/cul-asia-south-logo.svg"); ?>-->
+        <!-- Use below -->
+       <!--<?php echo file_get_contents($theme_path . "images/cul-asia-japan-logo.svg"); ?>-->
 
+       <!--Once you use the above, remove the SVG code below -->
         <?xml version="1.0" encoding="utf-8"?>
         <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
         <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="913.7px"
-             height="125.7px" viewBox="0 0 913.7 125.7" enable-background="new 0 0 913.7 125.7" xml:space="preserve">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="934.3px"
+             height="125.7px" viewBox="0 0 934.3 125.7" enable-background="new 0 0 934.3 125.7" xml:space="preserve">
         <g id="COUNTRY">
+            <text transform="matrix(1 0 0 1 793.0047 90.8709)" opacity="0.63"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Montserrat'" font-size="39.494">JAPAN</text>
         </g>
-        <g opacity="0.65" id="REGION">
-            <g>
-                <text transform="matrix(1 0 0 1 515.6714 90.8709)" fill="#FFFFFF" font-family="'Montserrat'" font-size="39.494">/ SOUTH ASIA</text>
-            </g>
+        <g id="REGION">
+            <text transform="matrix(1 0 0 1 515.6714 90.8709)" fill="#FFFFFF" font-family="'Montserrat'" font-size="39.494">/ EAST ASIA/</text>
         </g>
         <g id="CUL_Logotype_1_">
             <text transform="matrix(1 0 0 1 145.3376 48.1821)" opacity="0.63"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Montserrat'" font-size="27.6531">Cornell University Library</text>
@@ -201,8 +202,13 @@ $theme_path = drupal_get_path('theme',$GLOBALS['theme']) . '/';
                 c-32,0-57.9-26-57.9-57.9c0-32,26-58,57.9-58c32,0,57.9,26,57.9,58C121.3,95,95.3,121,63.3,121z"/>
             </g>
             <g opacity="0" id="shape_COUNTRY">
-                <a xlink:href="/collections/southasia">
-                    <rect x="551.2" y="58.3" fill="#FFFFFF" width="362.4" height="34.1"/>
+                <a xlink:href="/collections/wason/japan">
+                    <rect x="792.7" y="58.3" fill="#FFFFFF" width="139.5" height="34.1"/>
+                </a>
+            </g>
+            <g opacity="0" id="SHAPE_REGION">
+                <a xlink:href="/collections/wason">
+                    <rect x="533.4" y="59" fill="#FFFFFF" width="241.9" height="34.1"/>
                 </a>
             </g>
             <g opacity="0" id="shape_UNIT">
@@ -250,11 +256,22 @@ $theme_path = drupal_get_path('theme',$GLOBALS['theme']) . '/';
 
     </div>
 
-        <!-- CORNER -->
+        <!-- ROUNDED CORNER FOR HERO IMAGES-->
 
-        <img class="corner-hero-interior"src="images/corner.svg">
+        <div class="corner-hero-interior">
 
+            <!--<?php echo file_get_contents($theme_path . "images/corner.svg"); ?>-->
 
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="223.1px" height="175.2px" viewBox="0 0 223.1 175.2" enable-background="new 0 0 223.1 175.2" xml:space="preserve">
+            <path fill="#CFB067" d="M0,175.2c0,0,225.6,12.3,223.1-175.2v175.2H0z"/>
+            <rect x="297.8" y="42.6" fill="#CFB067" width="74.2" height="58.3"/>
+            </svg>
+
+        </div>
 
         <!-- MIAN NAV -->
         <a class="sandwich" href="#" title="Show navigation"></a>

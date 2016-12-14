@@ -51,7 +51,7 @@ $theme_path = drupal_get_path('theme',$GLOBALS['theme']) . '/';
 
 <body class="front">
 
-    <header class="home" style="background-image: url('images/homepage-bg-hero.png');">
+    <header class="home" style="background-image: url('images/homepages-hero-images/homepage-bg-hero.jpg');">
 
         <!-- CU + CUL BRANDING -->
         <section class="CUL-branding">
@@ -289,10 +289,22 @@ $theme_path = drupal_get_path('theme',$GLOBALS['theme']) . '/';
 
         <h3 class="collections">Collections</h3>
 
-            <!-- CORNER -->
+            <!-- ROUNDED CORNER FOR HERO IMAGES-->
 
-            <img class="corner-hero"src="images/corner.svg">
+            <div class="corner-hero">
 
+                <!--<?php echo file_get_contents($theme_path . "images/corner.svg"); ?>-->
+
+                <?xml version="1.0" encoding="utf-8"?>
+                <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="223.1px" height="175.2px" viewBox="0 0 223.1 175.2" enable-background="new 0 0 223.1 175.2" xml:space="preserve">
+                <path fill="#CFB067" d="M0,175.2c0,0,225.6,12.3,223.1-175.2v175.2H0z"/>
+                <rect x="297.8" y="42.6" fill="#CFB067" width="74.2" height="58.3"/>
+                </svg>
+
+            </div>
 
             <!-- MIAN NAV -->
             <a class="sandwich" href="#" title="Show navigation"></a>
@@ -448,7 +460,7 @@ $theme_path = drupal_get_path('theme',$GLOBALS['theme']) . '/';
             <a href="#"><img class="img-responsive" alt="Responsive image" src="images/collection-image.jpg" /></a>
 
 
-            <p class="wason"><a href="#">China<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>  <a href="">Korea<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>  <a href="">Japan<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></p>
+            <p class="wason"><a href="#">China</a> | <a href="">Korea</a> | <a href="">Japan</a></p>
 
 
         </div>

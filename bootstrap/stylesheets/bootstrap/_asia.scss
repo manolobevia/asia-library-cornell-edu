@@ -7,12 +7,6 @@ body {
     color: $body-text;
     overflow-x: hidden;
 }
-/*.show-grid {
-    div {
-        background-color: #e3e3e3;
-    }
-}*/
-
 a {
     color: $btn-link-text;
     &:hover {
@@ -248,7 +242,7 @@ a.show-hide-search {
             }
             li:hover {
                 a {
-                    color: $link-text;
+                    color: #b5b9ba;
                     text-decoration: none;
                 }
                 .wrapper {
@@ -304,6 +298,7 @@ a.show-hide-search {
                             float: left;
                         }
                         a {
+                            color: $link-text;
                             line-height: 24px;
                         }
                     }
@@ -416,7 +411,7 @@ a.show-hide-search {
         line-height: 1.1em;
         padding-bottom: 5px;
         .search-filter-selected {
-            opacity: .5;
+            opacity: .8;
         }
     }
     .filtered-search {
@@ -456,7 +451,7 @@ a.show-hide-search {
                 padding-left: 10px;
             }
             .glyphicon-chevron-up {
-                color: $link-text;
+                color: $link-text-hover;
                 font-size: 25px;
                 line-height: 51px;
                 padding-left: 10px;
@@ -556,7 +551,7 @@ a.show-hide-search {
         line-height: 1.1em;
         padding-bottom: 10px;
         .search-filter-selected {
-            opacity: .5;
+            opacity: .8;
         }
     }
     //////////////
@@ -591,7 +586,13 @@ a.show-hide-search {
                 display: none;
             }
             .glyphicon-chevron-down {
-                color: #1ebae1;
+                color: $link-text;
+                font-size: 25px;
+                line-height: 51px;
+                padding-left: 10px;
+            }
+            .glyphicon-chevron-up {
+                color: $link-text-hover;
                 font-size: 25px;
                 line-height: 51px;
                 padding-left: 10px;
@@ -634,6 +635,12 @@ a.show-hide-search {
                 line-height: 51px;
                 border-bottom: 1px solid #d6d6d6;
                 font-size: 16px;
+                a {
+                    color: $link-text;
+                    &:hover {
+                        color: $link-text-hover;
+                    };
+                }
             }
         }
         .submit-search {
@@ -668,6 +675,15 @@ a.show-hide-search {
     text-align: center;
     padding-top: 5px;
     display: none;
+    &:hover {
+        opacity: .9;
+    }
+    a{
+        color: #fff;
+        &:hover { 
+            opacity: .5;
+        }
+    }
 }
 .user-tools-header {
     position: absolute;
@@ -712,6 +728,9 @@ a.show-hide-search {
     width: auto;
     color: #fff;
     display: none;
+    path {
+        fill: $corner-hero-home-color;
+    }
 }
 
 .not-front .interior {
@@ -735,6 +754,13 @@ a.show-hide-search {
     width: auto;
     color: #fff;
     display: none;
+    path {
+        fill: $corner-hero-interior-color;
+    }
+    svg {
+        height: 94px;
+        width: auto;
+    }
 }
 
 .home h3 {
@@ -747,7 +773,7 @@ a.show-hide-search {
     width: 200px;
     height: 60px;
     color: #fff;
-    background-color: $gold;
+    background-color: $background-color;
     margin-bottom: 0;
     padding-top: 17px;
     padding-left: 17px;
@@ -762,7 +788,7 @@ a.show-hide-search {
 .collections {
     //height: 400px;
     height: auto;
-    background-color: $btn-link-background;
+    background-color: $background-color;
     .collection {
         margin-left: 0;
         padding-left: 40px;
@@ -829,7 +855,7 @@ a.show-hide-search {
         h5 {
             font-size: 26px;
             padding-bottom: 10px;
-            color: $link-text;
+            color: $header-text;
         }
         img {
             border: 6px solid $border-feature-image;
@@ -999,7 +1025,7 @@ a.show-hide-search {
  *******************************************/
 
 .sub-section {
-    background-color: $gold;
+    background-color: $background-color;
 
     h3 {
         width: 1300px;
@@ -1015,6 +1041,8 @@ a.show-hide-search {
 }
 
 .page-content {
+    margin-left: 0;
+    margin-right: 0;
     .content-item {
         color: $body-text;
         padding-right: 50px;
@@ -1080,10 +1108,10 @@ a.show-hide-search {
             padding-left: 20px;
         }
         a {
-            color: $btn-link-text-interior;
+            color: $link-text;
             
             &:hover {
-                color: $btn-link-text-interior;
+                color: $link-text-hover;
             }
         }
     }
@@ -1098,10 +1126,10 @@ a.show-hide-search {
         }
         a {
             font-size: 18px;
-            color: $btn-link-text-interior;
+            color: $link-text;
 
             &:hover {
-            color: $btn-link-text-interior;
+            color: $link-text-hover;
 
             }
         }
@@ -1349,7 +1377,7 @@ _\ \ | | | | | (_| | | |  / / | (_| | |_) | |  __/ |_\__ \
         }
     }
     .not-front .interior {
-        background-position: left -200px;
+        background-position: left 0;
     }
 }
 
